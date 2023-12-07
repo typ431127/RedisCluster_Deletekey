@@ -1,3 +1,4 @@
 /RedisCluster_Deletekey
 /config-db.yml
 .idea/
+dist/
