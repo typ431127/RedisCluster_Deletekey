@@ -1,0 +1,14 @@
+Cluster: # redis集群版配置
+  Addrs: #redis集群连接信息,不区分master slave 自动识别master
+    - "redis-db-beijing1:7000"
+    - "redis-db-beijing1:7001"
+    - "redis-db-beijing2:7002"
+    - "redis-db-beijing2:7003"
+    - "redis-db-beijing3:7004"
+    - "redis-db-beijing3:7005"
+  Username: ""
+  Password: "xxxxxxx"
+  Match: # 要删除的匹配key
+    - "opstest:tmp*"
+    - "tmp:*"
+    - "ddn:userinfo:*"
